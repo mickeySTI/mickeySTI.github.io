@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="index.css">
+
     <title>Professional Portfolio</title>
   </head>
 
@@ -11,10 +12,10 @@
 
   <body>
     <header>
-      <h1>My Portfolio</h1>
+      <h1>My Portfolio  <button id="navButton" onclick="navFunction()">Nav</button></h1>
     </header>
 
-    <nav  class="navbar">
+    <nav id="nav" class="navbar">
         <a href="index.html">Home</a>
         <a href="#aboutme">About Me</a>
         <a href="#contactinfo">Contact</a>
@@ -23,10 +24,9 @@
         <a href="#projectthree">Project Three</a>
         </nav>
 
+        <div class="container">
 
-<div class="container">
-
-  <div class="item1">
+    <div class="item1">
       <section class="picture">
         <img src="picture.JPG" alt="">
       </section>
@@ -35,7 +35,7 @@
   <h3><a name="contactinfo"></a>Contact Information</h3>
   <p>Phone Number: 216-471-1936</p>
   <p>Email: garciajm1120@gmail.com</p>
-  <a class="link" href="www.linkedin.com/in/michael-garcia-a579271a1">LinkedIn</a>
+  <a class="link" href="https://www.linkedin.com/in/michael-garcia-a579271a1/">LinkedIn</a>
 </section>
 
   </div>
@@ -55,36 +55,60 @@
   <h2>Projects</h2>
 
   <h3><a name="projectone"></a>1. Virtual Pet - <a href="https://github.com/mickeySTI/virtual-pet-2">GitHub Link</a></h3>
+  <button id="show"  type="button" name="button" class="collapsible" >Show Description</button>
+
+    <article class="content">
+      In this program you are able to create a virtual pet and then allows the user to interact with that virtual pet.
+    </article>
+    <br>
+
     <p>Languages/Resourses Used: Java</p>
     <img src="virtualpet.JPG">
 
 
-  <h3><a name="projecttwo"></a>2. Review Site - <a href="https://github.com/mickeySTI/review-site">GitHub Link</a></h3>
-      <p>Languages/Resourses Used: Java, HTML, CSS, and Spring MVC</p>
-      <img src="reviewsite.JPG" alt="">
+  <h3><a name="projecttwo"></a>2. Review Site Full Stack - <a href="https://github.com/mickeySTI/review-site">GitHub Link</a></h3>
+  <button id="show"  type="button" name="button" class="collapsible" >Show Description</button>
+  <article class="content">
+    This is a full stack program that shows reviews that are linked to a specific category.
+  </article>
+  <br>
 
+      <p>Languages/Resourses Used: Java, HTML, CSS, and Spring MVC</p>
+      <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="review1.JPG" alt="">
+            <img src="review2.JPG" alt="">
+            <img src="review3.JPG" alt="">
+          </div>
+      </div>
+      <br>
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
 
 
 
   <h3><a name="projectthree"></a>3. Virtual Pet Amok - <a href="https://github.com/mickeySTI/virtual-pet-amok">GitHub Link</a></h3>
+  <button id="show" type="button" name="button" class="collapsible" >Show Description</button>
+  <article class="content">
+    This program is similar to virtual pet. However, it allows you to create multiple pets and allow you to indentify the species of the pet.
+  </article>
+  <br>
+
     <p>Languages/Resourses Used: Java</p>
     <img src="virtualpetamok.JPG" alt="">
 
 
   </article>
 </div>
-
-
-
-
+    <script src="app.js"></script>
 </div>
-
-
 
 
 <footer>
 <a href="https://github.com/mickeySTI">GitHub: @mickeySTI</a>
 </footer>
+
+
 
   </body>
 

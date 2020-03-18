@@ -18,17 +18,23 @@ body{
   display: grid;
   width: 100%;
   margin: 0;
-
   grid-gap: 10px;
 
 }
 
+#navButton{
+  margin-left: 10%;
+  background-color: #0E5C7D;
+  text-decoration-style: none;
+    color: #fff;
 
+}
 
 
 header{
   background-color: #0E5C7D;
   color: #fff;
+  margin-bottom: 0%;
 }
 
 h1{
@@ -126,6 +132,9 @@ h2{
   padding-bottom: 2%;
   padding-right: 35%;
   overflow: hidden;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
 
 }
 
@@ -137,12 +146,39 @@ h2{
 
 .item3 img{
 max-width: 700px;
-min-width: 200PX
+
 }
+
+.carousel-container{
+  width: 700px;
+
+  overflow: hidden;
+}
+
+
+.carousel-slide{
+  display: flex;
+  max-width: 700px;
+
+
+}
+
+.item3 button{
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+  margin-bottom: 50px;
+}
+
 
 .item3 a{
   text-decoration: none;
   color: white;
+}
+
+
+.content{
+   display: none;
 }
 
 
@@ -152,7 +188,6 @@ footer{
 }
 
 footer a{
-
   padding-top: 5%;
   color: white;
   text-decoration: none;
